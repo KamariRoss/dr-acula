@@ -4,9 +4,196 @@
 
 html {
   height: 100%;
+  background-color: rgb(50, 50, 50);
 }
 
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(216, 216, 216);
+  padding-bottom: 4rem;
+  padding-left: 0.5rem;
+}
+
+p {
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 0rem;
+  font-size: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.red {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  color: rgb(255, 94, 94)
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  padding: 0rem;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  color: rgb(151, 151, 151);
+  /* justify-content: space-evenly; */
+  /* padding-left: 1rem; */
+  /* justify-content: space-evenly; */
+  padding-bottom: 1rem;
+}
+
+nav {
+  /* padding-right: 2rem;
+  display: flex;
+  justify-content: center; */
+  margin: 0rem;
+}
+
+img {
+  width: 82%;
+  height: auto;
+  padding-bottom: 2rem;
+  /* padding: 2rem; */
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: rgb(10, 10, 10);
+  border: none;
+  color: white;
+  padding: 1.0rem 2rem;
+  text-decoration: none;
+  font-size: 0.2rem;
+  display: flex;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header2 {
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 0rem;
+  padding-bottom: 1.5rem;
+}
+
+.twolist {
+  visibility: hidden;
+  display: none;
+  opacity: 0.0;
+}
+
+.twobutton {
+  visibility: hidden;
+  display: none;
+  opacity: 0.0;
+}
+
+@media (min-width: 768px) {
+  footer {
+    font-size: 4rem;
+    padding: 5rem;
+  }
+  p {
+    font-size: 5rem;
+  }
+  section {
+    flex: 48%;
+    height: 25rem;
+    width: 100%;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img {
+    margin-top: 8px;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 95%;
+  }
+  .header2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .left {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .twolist {
+    visibility: visible;
+    display: flex;
+    opacity: 1.0;
+    justify-content: space-evenly;
+  }
+  .twobutton {
+    visibility: visible;
+    display: flex;
+    opacity: 1.0;
+    margin: 0;
+  }
+  div.twonav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0;
+    padding-left: 2rem;
+  }
+  .twolist li {
+    padding-left: 1rem;
+    color: lightblue;
+    align-items: center;
+  }
+  header {
+    padding-top: 2rem;
+  }
+  li {
+    padding-left: 2rem;
+  }
+  nav {
+    /* padding-right: 2rem; */
+    justify-content: flex-start;
+  }
+  ul {
+    justify-content: flex-start;
+  }
+  @media (min-width: 1200px) {
+    p.header1 {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    .row1 {
+      display: flex;
+    }
+  }
 }
